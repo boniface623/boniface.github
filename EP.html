@@ -1,0 +1,153 @@
+<form action="submit_data.php" method="POST">
+    <link rel="stylesheet" href="EP.css">
+
+    <!-- Informations Générales -->
+    <fieldset>
+        <legend>Informations Générales</legend>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+        
+        <label for="lieu1">Lieu de livraison 1:</label>
+        <input type="text" id="lieu1" name="lieu1" required><br>
+        
+        <label for="lieu2">Lieu de livraison 2:</label>
+        <input type="text" id="lieu2" name="lieu2" required><br>
+        
+        <label for="lieu3">Lieu de livraison 3:</label>
+        <input type="text" id="lieu3" name="lieu3" required><br>
+    </fieldset>
+
+    <!-- Bloc : Production -->
+    <fieldset>
+        <legend>Production</legend>
+
+        <!-- Production 1 -->
+        <fieldset>
+            <legend>Production 1</legend>
+            <label for="nb_livres1">Nombre d'œufs livrés:</label>
+            <input type="number" id="nb_livres1" name="nb_livres1" required><br>
+            
+            <label for="oeufs_collectes1">Nombre d'œufs collectés:</label>
+            <input type="number" id="oeufs_collectes1" name="oeufs_collectes1" required><br>
+            
+            <label for="quantite1">Quantité livrée:</label>
+            <textarea id="quantite1" name="quantite1" required></textarea><br>
+            
+            <label for="quantite_non_livree1">Quantité non livrée:</label>
+            <input type="number" id="quantite_non_livree1" name="quantite_non_livree1" required><br>
+
+            <label for="reste_a_completer1">Reste à compléter:</label>
+            <input type="number" id="reste_a_completer1" name="reste_a_completer1" required><br>
+        </fieldset>
+
+        <!-- Production 2 -->
+        <fieldset>
+            <legend>Production 2</legend>
+            <label for="nb_livres2">Nombre d'œufs livrés:</label>
+            <input type="number" id="nb_livres2" name="nb_livres2" required><br>
+            
+            <label for="oeufs_collectes2">Nombre d'œufs collectés:</label>
+            <input type="number" id="oeufs_collectes2" name="oeufs_collectes2" required><br>
+            
+            <label for="quantite2">Quantité livrée:</label>
+            <textarea id="quantite2" name="quantite2" required></textarea><br>
+            
+            <label for="quantite_non_livree2">Quantité non livrée:</label>
+            <input type="number" id="quantite_non_livree2" name="quantite_non_livree2" required><br>
+
+            <label for="reste_a_completer2">Reste à compléter:</label>
+            <input type="number" id="reste_a_completer2" name="reste_a_completer2" required><br>
+        </fieldset>
+
+        <!-- Production 3 -->
+        <fieldset>
+            <legend>Production 3</legend>
+            <label for="nb_livres3">Nombre d'œufs livrés:</label>
+            <input type="number" id="nb_livres3" name="nb_livres3" required><br>
+            
+            <label for="oeufs_collectes3">Nombre d'œufs collectés:</label>
+            <input type="number" id="oeufs_collectes3" name="oeufs_collectes3" required><br>
+            
+            <label for="quantite3">Quantité livrée:</label>
+            <textarea id="quantite3" name="quantite3" required></textarea><br>
+            
+            <label for="quantite_non_livree3">Quantité non livrée:</label>
+            <input type="number" id="quantite_non_livree3" name="quantite_non_livree3" required><br>
+
+            <label for="reste_a_completer3">Reste à compléter:</label>
+            <input type="number" id="reste_a_completer3" name="reste_a_completer3" required><br>
+        </fieldset>
+    </fieldset>
+
+    <!-- Bloc : Finances -->
+    <fieldset>
+        <legend>Finances</legend>
+
+        <!-- Finances 1 -->
+        <fieldset>
+            <legend>Finances 1</legend>
+            <label for="depenses1">Dépenses effectuées:</label>
+            <textarea id="depenses1" name="depenses1" required></textarea><br>
+
+            <label for="montant1">Montant perçu:</label>
+            <textarea id="montant1" name="montant1" required></textarea><br>
+        </fieldset>
+
+        <!-- Finances 2 -->
+        <fieldset>
+            <legend>Finances 2</legend>
+            <label for="depenses2">Dépenses effectuées:</label>
+            <textarea id="depenses2" name="depenses2" required></textarea><br>
+
+            <label for="montant2">Montant perçu:</label>
+            <textarea id="montant2" name="montant2" required></textarea><br>
+        </fieldset>
+
+        <!-- Finances 3 -->
+        <fieldset>
+            <legend>Finances 3</legend>
+            <label for="depenses3">Dépenses effectuées:</label>
+            <textarea id="depenses3" name="depenses3" required></textarea><br>
+
+            <label for="montant3">Montant perçu:</label>
+            <textarea id="montant3" name="montant3" required></textarea><br>
+        </fieldset>
+
+        <!-- Montant Total Perçu -->
+        <fieldset>
+            <legend>Montant Total Perçu</legend>
+            <label for="montant_total">Montant total perçu:</label>
+            <textarea id="montant_total" name="montant_total" required></textarea><br>
+        </fieldset>
+    </fieldset>
+
+    <!-- État Sanitaire et Conditions -->
+    <fieldset>
+        <legend>État Sanitaire et Conditions</legend>
+
+        <label for="conditions">Conditions climatiques (ex : ensoleillé, pluvieux):</label>
+        <input type="text" id="conditions" name="conditions"><br>
+
+        <label for="alimentation">Type d'alimentation donnée:</label>
+        <input type="text" id="alimentation" name="alimentation"><br>
+
+        <label for="mortalite">Nombre de poules mortes:</label>
+        <input type="number" id="mortalite" name="mortalite" value="0"><br>
+
+        <label for="vaccins">Vaccins administrés:</label>
+        <input type="text" id="vaccins" name="vaccins"><br>
+    </fieldset>
+
+    <!-- Observations et Traitements -->
+    <fieldset>
+        <legend>Observations et Traitements</legend>
+
+        <label for="observations">Observations (ex : comportement anormal):</label>
+        <textarea id="observations" name="observations"></textarea><br>
+
+        <label for="produit_traitement">Produit de traitement actuel:</label>
+        <input type="text" id="produit_traitement" name="produit_traitement"><br>
+    </fieldset>
+
+    <input type="submit" value="Envoyer">
+</form>
